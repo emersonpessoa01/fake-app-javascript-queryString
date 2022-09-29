@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  background: var(--lilac);
+  padding: 10px;
+  color: var(--white);
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+}

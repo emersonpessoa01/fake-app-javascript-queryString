@@ -1,0 +1,37 @@
+/*
+
+
+.country-container {
+    display: flex;
+    justify-content: center;
+    background: var(--background-facebook);
+    padding: 80px 0;
+  }
+  
+  .country {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #f1f2f3;
+    margin-top: 0.2rem;
+  }
+  .country div {
+    margin: 0 0.5rem;
+  }
+  .country li:nth-child(1) {
+    font-weight: 600;
+  }
+  
+  .country-list {
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: #addfdf;
+    color: #121721;
+    transition: transform 0.3s;
+  }
+  .country-list:hover {
+    box-shadow: 1px 1px 3px #575656;
+    transform: translateY(5px);
+  }
+  
