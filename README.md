@@ -5,7 +5,7 @@
 
 ## Pré-visualização:
 
-[fake-app-javascript-queryString]()
+[fake-app-javascript-queryString](https://fake-app-javascript-query-string.vercel.app/)
 
 <div align="center"><img src="image/home.png" width=auto>
 </div>
