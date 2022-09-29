@@ -34,6 +34,7 @@ const renderTable = ({ id, name, email }) => {
         <th>ID</th>
         <th>Nome</th>
         <th>E-mail</th>
+        <th>Ação</th>
       </tr>
     </thead>
     <tbody>
@@ -41,6 +42,7 @@ const renderTable = ({ id, name, email }) => {
         <td data-label="id:">${id}</td>
         <td data-label="nome:">${name}</td>
         <td data-label="email:">${email}</td>
+        <td data-label="voltar:" class="center"><a href="index.html" class="btn btn-success">Voltar</a></td>
       </tr>
     </tbody>
   </table>

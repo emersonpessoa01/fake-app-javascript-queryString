@@ -25,7 +25,7 @@ const renderTable = (employees) => {
     <td data-label="id:" >${id}</td>
     <td data-label="name:">${name}</td>
     <td data-label="email:">${email}</td>
-    <td data-label="ações:"><a href="details.html" target="_blank" id="${id}" class="btn btn-success">Detalhes</a></td>
+    <td data-label="ações:" class="center"><a href="details.html" id="${id}" class="btn btn-success">Detalhes</a></td>
   </tr>`;
   });
   return `

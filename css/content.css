@@ -37,6 +37,9 @@ td {
 table tbody tr:nth-child(even) {
   background: #f5f5f5;
 }
+table tbody tr .center{
+  text-align: center;
+}
 table tr {
   background: #ededed;
 }
