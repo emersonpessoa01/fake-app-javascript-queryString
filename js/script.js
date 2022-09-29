@@ -7,6 +7,8 @@ const getJson = async () => {
     let response = await fetch(url);
     let json = await response.json();
 
+    // console.log(json);
+
     let table = renderTable(json);
     let content = document.getElementById("content");
     content.innerHTML = table;
@@ -25,7 +27,7 @@ const renderTable = (employees) => {
     <td data-label="id:" >${id}</td>
     <td data-label="name:">${name}</td>
     <td data-label="email:">${email}</td>
-    <td data-label="ações:" class="center"><a href="details.html" id="${id}" class="btn btn-success">Detalhes</a></td>
+    <td data-label="ações:" class="center"><a href="details.html" id="${id}" class="btn btn-success">Detalhes</a><a href="albums.html" id="${id}" class="btn btn-success">Álbuns</a></td>
   </tr>`;
   });
   return `
@@ -42,14 +44,14 @@ const renderTable = (employees) => {
   </table>`;
 };
 
-function handleButtons(roles) {
+function handleButtons() {
   let buttons = Array.from(content.querySelectorAll(".btn"));
   // console.log(buttons);
 
   for (let i = 0; i < buttons.length; i++) {
     // console.log(buttons[i]);
     let id = buttons[i].getAttribute("id");
-    console.log(`id: ${id}`);
+    // console.log(`id: ${id}`);
 
     let url = buttons[i].href;
     // console.log(url);
