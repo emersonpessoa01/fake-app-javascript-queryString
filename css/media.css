@@ -33,6 +33,9 @@
   html {
     font-size: 50%;
   }
+  section{
+    padding: 2rem 7%;
+  }
   .blogs .box-container .box .content .btn-content {
     display: flex;
     flex-direction: column;
@@ -44,6 +47,11 @@
   }
   .blogs .box-container .box .content .btn-content a {
     width: 100%;
+  }
+  .blogs .box-container .box .image {
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
   }
 }
 
