@@ -48,7 +48,7 @@ const renderTable = ({ id, name,phone, email, username, address }) => {
         <td data-label="email:">${email}</td>
         <td data-label="nome de usuário:">${username}</td>
         <td data-label="endereço:">${address.street}</td>
-        <td data-label="ação:" class="center"><a href="index.html" class="btn btn-success">Voltar</a><a href="albums.html" id="${id}" class="btn btn-success">Álbuns</a></td>
+        <td data-label="ação:" class="center"><a href="index.html" class="btn btn1">Voltar</a><a href="albums.html" id="${id}" class="btn btn1">Álbuns</a></td>
       </tr>
     </tbody>
   </table>

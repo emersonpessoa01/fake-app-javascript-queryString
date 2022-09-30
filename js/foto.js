@@ -16,35 +16,38 @@ const getUser = async () => {
     let json = await response.json();
     console.log(json);
 
-    let table = renderTable(json);
-    let content = document.getElementById("content");
-    content.innerHTML = table;
+    let foto = renderTable(json);
+    let content = document.getElementById("blogs");
+    content.innerHTML = foto;
   } catch (error) {
     console.log(`Error: ${error.message}`);
   }
 };
 getUser();
 
-const renderTable = (employees) => {
-  let rows = employees.map(({ id,title, thumbnailUrl }) => {
+const renderTable = (json) => {
+  let rows = json.map(({ id, title, thumbnailUrl, url }) => {
     return `
-    <tr>
-      <td data-label="id:">${id}</td>
-      <td data-label="Título:">${title}</td>
-      <td data-label="Foto:"><img src="${thumbnailUrl}"></td>
-      <td data-label="Voltar:"><a href="albums.html" class="btn btn-success">Voltar</a></td>
-    </tr>`;
+    <h1 class="heading">Imagem <span>Miniatura</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="${thumbnailUrl}" alt="image">
+        </div>
+        <div class="content">
+          <span class="title">${id}</span>
+          <p>
+              ${title}.
+            </p>
+          <div class="btn-content">
+            <a href="albums.html" id="${id}" class="btn btn1">Voltar</a>
+            <a href="${url}" id="${id}" class="btn btn1" target="_blank">Foto grande</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  `;
   });
-  return `
-    <table border="1">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Título</th>
-          <th>Foto</th>
-          <th>Ação</th>
-        </tr>
-      </thead>
-      ${rows.join("")}
-    </table>`;
+  return rows.join("");
 };

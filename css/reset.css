@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Inter:wght@200;300;400;600;700&family=Montserrat:wght@300;500;700&family=PT+Mono:wght@300;500;700&display=swap");
 
-
-
-
 :root {
   --white: #fff;
   --green: #5ebab8;
@@ -47,4 +44,52 @@ html {
 }
 body {
   background-color: var(--background);
+}
+section {
+  padding: 2rem 7%;
+  
+}
+
+.heading {
+  text-align: center;
+  color: var(--lilac);
+  text-transform: uppercase;
+  padding-top: 3.5rem;
+  font-size: 2rem;
+}
+.heading span {
+  color: var(--green);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: 2px solid var(--lilac);
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  background: var(--lilac);
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.btn::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: var(--white);
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.btn1::before {
+  width: 0;
+
+  height: 100%;
+}
+.btn1:hover::before {
+  width: 100%;
 }

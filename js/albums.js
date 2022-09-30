@@ -30,12 +30,12 @@ const getUser = async () => {
 getUser();
 
 const renderTable = (json) => {
-    let rows = json.map(({ id, title, url }) => {
+    let rows = json.map(({ id, title,}) => {
       return `
     <tr>
       <td data-label="id:" >${id}</td>
       <td data-label="Título:">${title}</td>
-      <td data-label="ações:" class="center"><a href="index.html" id="${id}" class="btn btn-success">Voltar</a><a href="foto.html" id="${id}" class="btn btn-success foto">Foto</a></td>
+      <td data-label="ações:" class="center"><a href="index.html" id="${id}" class="btn btn1">Voltar</a><a href="foto.html" id="${id}" class="btn btn1 foto">Foto</a></td>
     </tr>`;
     });
     return `
