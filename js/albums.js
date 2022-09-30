@@ -35,7 +35,6 @@ const renderTable = (json) => {
     <tr>
       <td data-label="id:" >${id}</td>
       <td data-label="Título:">${title}</td>
-      <td data-label="URL:">${url}</td>
       <td data-label="ações:" class="center"><a href="index.html" id="${id}" class="btn btn-success">Voltar</a><a href="foto.html" id="${id}" class="btn btn-success foto">Foto</a></td>
     </tr>`;
     });
@@ -45,7 +44,6 @@ const renderTable = (json) => {
         <tr>
           <th>ID</th>
           <th>Título</th>
-          <th>Url</th>
           <th>Ações</th>
         </tr>
       </thead>

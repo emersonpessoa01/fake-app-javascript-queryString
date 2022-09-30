@@ -31,7 +31,7 @@ const renderTable = (employees) => {
     <tr>
       <td data-label="id:">${id}</td>
       <td data-label="Título:">${title}</td>
-      <td data-label="Foto:">${thumbnailUrl}</td>
+      <td data-label="Foto:"><img src="${thumbnailUrl}"></td>
       <td data-label="Voltar:"><a href="albums.html" class="btn btn-success">Voltar</a></td>
     </tr>`;
   });
