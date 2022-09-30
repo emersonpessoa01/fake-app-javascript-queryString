@@ -7,7 +7,8 @@
   /* gap: 1.5rem; */
 }
 .blogs .box-container .box {
-  border: 1px solid var(--background-facebook);
+    border: 1px solid var(--lilac);
+    background: var(--white);
 }
 .blogs .box-container .box .image {
   width: 100%;
