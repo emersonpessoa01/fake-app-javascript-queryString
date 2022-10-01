@@ -33,8 +33,12 @@
   html {
     font-size: 50%;
   }
-  section{
+  section {
     padding: 2rem 7%;
+  }
+  table th,
+  td {
+    font-size: 1.6rem;
   }
   .blogs .box-container .box .content .btn-content {
     display: flex;
@@ -55,11 +59,11 @@
   }
 }
 
-@media (max-width:250px){
-  html{
+@media (max-width: 250px) {
+  html {
     font-size: 35%;
   }
-  .heading{
+  .heading {
     font-size: 2rem;
     display: flex;
     flex-flow: column wrap;

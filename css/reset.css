@@ -43,10 +43,10 @@ html {
   font-size: 100%;
 }
 body {
-  background-color: var(--background);
+  background-color: var(--background-facebook);
 }
 section {
-  padding: 2rem 7%;
+  padding: 2rem 20%;
   
 }
 
@@ -63,7 +63,7 @@ section {
 
 .btn {
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: 0.125rem 1.2rem;
   border: 2px solid var(--lilac);
   border-radius: 0.5rem;
   position: relative;
@@ -71,7 +71,7 @@ section {
   z-index: 0;
   background: var(--lilac);
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .btn::before {
