@@ -46,12 +46,12 @@ const renderTable = (employees) => {
 
 function handleButtons() {
   let buttons = Array.from(content.querySelectorAll(".btn"));
-  // console.log(buttons);
+  // console.log(buttons);// identifica todos os atributos da classe .btn e coloca dentro de uma lista
 
   for (let i = 0; i < buttons.length; i++) {
-    // console.log(buttons[i]);
+    //console.log(buttons[i]); //mostra os atributos em cada ancora
     let id = buttons[i].getAttribute("id");
-    // console.log(`id: ${id}`);
+    // console.log(`id: ${id}`); //mostra os valores do botão pelo id
 
     let url = buttons[i].href;
     // console.log(url);
